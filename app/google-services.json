@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037699457445",
+    "project_id": "opsc7311poe-9b7cb",
+    "storage_bucket": "opsc7311poe-9b7cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037699457445:android:f7a22732800bd12d7c884c",
+        "android_client_info": {
+          "package_name": "com.example.clockedout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037699457445-2o2hrvhnkmnrdkdg2k69r4kqibrv1cih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJncgyCTf_OlmKv48G3k8WooU_3S4hUig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037699457445-2o2hrvhnkmnrdkdg2k69r4kqibrv1cih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

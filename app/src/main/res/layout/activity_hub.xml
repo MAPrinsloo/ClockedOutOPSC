@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2B19C"
+    tools:context=".Hub">
+
+    <ImageView
+        android:id="@+id/ivHubIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/clocked_out" />
+
+    <TextView
+        android:id="@+id/tvHubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Welcome"
+        android:textColor="#030D11"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_below="@id/tvHubTitle">
+
+        <Button
+            android:id="@+id/btnTimesheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#030D11"
+            android:text="Clock Out" />
+
+        <Button
+            android:id="@+id/btnCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linVertUserInput"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="#030D11"
+            android:fontFamily="sans-serif"
+            android:text="Manage Categories" />
+
+        <Button
+            android:id="@+id/btnGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#030D11"
+            android:text="Set Goals" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linVertUserInput"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="#030D11"
+            android:fontFamily="sans-serif"
+            android:text="View History" />
+
+        <Button
+            android:id="@+id/btnProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#030D11"
+            android:text="Check Progress" />
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#030D11"
+            android:text="Quiz" />
+
+        <Button
+            android:id="@+id/btnDoNotDisturb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#030D11"
+            android:text="Do Not Disturb" />
+
+    </LinearLayout>
+
+</RelativeLayout>

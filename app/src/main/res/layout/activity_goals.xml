@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2B19C"
+    tools:context=".Goals">
+
+    <ImageView
+        android:id="@+id/ivCategoriesIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/clocked_out" />
+
+    <TextView
+        android:id="@+id/tvGoalsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Goals"
+        android:textColor="#030D11"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:id="@+id/linHoriMinGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGoalsTitle"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Min Hours:"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etMinHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linHoriMaxGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linHoriMinGoals"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMaxHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Max Hours:"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etMaxHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSetGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linHoriMaxGoals"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#9FC4D0"
+        android:text="Set Goals"
+        android:textColor="#030D11"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+</RelativeLayout>

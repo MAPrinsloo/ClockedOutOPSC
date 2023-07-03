@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2B19C"
+    tools:context=".History">
+
+    <TextView
+        android:id="@+id/tvHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="History"
+        android:textColor="#030D11"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:id="@+id/linHoriDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvHistoryTitle"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Date:"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Date:"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linHoriCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linHoriDates"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Categories:"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alwaysDrawnWithCache="false"
+            android:backgroundTint="#030D11"
+            android:backgroundTintMode="screen"
+            android:spinnerMode="dropdown"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <TextView
+            android:id="@+id/tvHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hours: 0"
+            android:textColor="#030D11"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linHoriCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:backgroundTint="#030D11"
+        android:text="Filter" />
+
+    <LinearLayout
+        android:id="@+id/linVertTimesheets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFilter"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEntries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Entries"
+            android:textColor="#030D11"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/lvTimesheets"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStoredPicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linVertTimesheets"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Stored Picture"
+        android:textColor="#030D11"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvStoredPicTitle"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+</RelativeLayout>
